@@ -3,38 +3,148 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>CSSS: A brief introduction</title>
+	<title>Como prototipar e desenvolver para múltiplos dispositivos</title>
 	
 	<link href="slideshow.css" rel="stylesheet" />
 	<link href="theme.css" rel="stylesheet" />
 	<link href="talk.css" rel="stylesheet" />
+	<link href="reusable.css" rel="stylesheet" />
 	<script src="prefixfree.min.js"></script>
 </head>
 <body data-duration="10">
+<!--
 
+* Foto do Aurélio
+Salva de palmas...
+Ah quase 2 anos eu conheci ele no BrazilJS em POA
+Lá eu também vi uma palestra do Bernard onde ele mostrou isso aqui
+* Hommer
+E o hommer e mais uma série de coisas que eu vi la, e que eu to vendo dia-a-dia na Nextt
+A cada pedido dos meus clientes... foi caindo a ficha.
+
+* O Futuro já chegou.
+
+Esse era o título da palestra mas o Aurélio mandou eu trocar porque ele disse que era muito vago...
+Mas é exatamente isso que eu vou enfatizar ao longo da palestra toda...
+O futuro já chegou... e vocês precisam acompanhar.. senão vocês vão ficar pra trás...
+Como diz o mané... não bobéia não, ô.
+
+A forma como as pessoas usam a web está mudando
+
+* Amontoado de devices
+O futuro já chegou.
+
+http://futurefriend.ly/
+
+* Gráfico de uso da web via mobile
+Asia e Africa já possuem mais de 50% via mobile
+Isso traz muitos desafios
+* HTC
+A forma velha de projetar para a web não funciona
+* Photoshop 
+
+
+Filipi
+Nextt
+6 anos front end
+3 anos de nextt
+	
+960 está morto
+
+Desenhar apenas para alguns aplicativos já era
+Forçar o uso de uma certa orientação é cavalice...
+
+* Photoshop 
+Você não projeta sua interface para uma certa dimensão você projeta para 4 cantos.
+
+Eu vim aqui para falar com vocês sobre "prototipação responsiva"
+Eu vim aqui para falar com vocês sobre "prototipação responsiva" RAPIDA
+
+Afinal o que é?
+Prototipar direto no código...
+
+Parece loucura... é muito melhor refinar a idéia antes de sair codificando...
+Loucura é prototipar no photoshop...
+Muitas decisões vão ser tomadas e não vai se ter nenhuma visão de como aquele seu projeto vai se comportar nos zilhøes de dispositivos
+
+Prototipar responsivamente é abrir mão do controle.
+
+Eu não estou dizendo para você abandonar o Photoshop... Ele vai ser útil em algumas etapas.
+Eu estou falando para você adicionar alguns princípios Lean no seu processo de design
+Desenvolve pouco, testa rápido e exaustivamente, decide rápido
+
+O que é interessante disso?
+- Você pode prototipar para qualquer dispositivo rapidamente
+- Adiantar um bom trabalho de desenvolvimento
+
+Comece com o conteúdo... depois você passa para a diagramação e todo o resto.
+
+Mas como?
+Basta ter algumas ferramentas...
+Uma das mais versáteis que estamos usando na Nextt é o Foundation, da Zurb.
+
+Vocês também podem usar o Bootstrap, a versão 3 incorporou alguns conceitos chave que a Zurb colocou no Foundation 4.
+Eles estão muito parecidos... falar sobre origim do foundation/bootstrap
+
+- Funciona em "tudo"
+- Possui um sistema grid poderoso
+- Estilo para as imagens para que você não se preocupe com pixels
+
+É uma caixa de ferramentas com o básico e o essencial para você poder criar o seu próprio styleguide.
+E aqui está um dos elementos chave para os projetos de interface de maior sucesso que estamos construindo na Nextt
+Um Styleguide conciso é a ferramenta que dá a maior liberdade para que os devs de um time possam construir um software ou website de sucesso.
+
+O processo começa com sketches
+Vai direto para o código...
+Testa, apresenta, discute, melhora...
+aí sim vai pro photoshop...
+tem um bom designer coder no time (unicórnio), vai usar pouco o photoshop...
+
+Alguns conhecimentos do Lean UX...
+Design não é documento, design é conhecimento.
+Você precisa usar os sketches, photoshops e protótipos para aprender o que é melhor para o seu produto / projeto / USUÁRIO
+O que vale no final é o software/site construído... o psd vai ser descartado... quase ninguém vai ver...
+Não se apegue no volátil...
+
+Algumas coisas que você precisa enfiar na caixola para não ficar preso no passado enquanto estiver criando seu protótipo...
+Mobile first...
+Conteúdo primeiro, navegação depois. (sem CSS uma página bem estrutura fica incrivelmente linda de se let )
+Se liga na diferença de interação touch x ponteiro..
+Se liga em coisas como like buttons
+
+Outras coisas interessantes que o Foundation tem
+- componentes javascript
+
+Construído em cima do SASS
+#Evoluir isto
+
+
+-->
 <header id="intro" class="slide">
 	<h1>
 		<object data="logo.svg" width="100%" type="image/svg+xml">
 			<img src="logo.png" alt="CSSS: CSS-based SlideShow System" />
 		</object>
 	</h1>
-	<p class="attribution">By Lea Verou</p>
+	<p class="attribution">por Filipi Zimermann</p>
 </header>
 <section>
-	<header class="slide">
-		<h1>Introduction</h1>
-	</header>
-	
-	<section class="slide" title="CSSS: Introduction">
-		<h2>What is it?</h2>
-		<p>A simple framework for building presentations with modern web standards</p>
-		<ul>
-			<li class="delayed">An HTML file contains the whole presentation</li>
-			<li class="delayed">Themes as CSS files</li>
-			<li class="delayed">JavaScript handles what CSS can't (keyboard shortcuts etc)</li>
-		</ul>
+	<section class="partial image slide" title="Aurélio, o cara" style="background-image:url(img/aurelio.jpg)">
+		<!-- TODO colocar twitter aurélio? -->
+	</section>
+
+	<section class="iframe slide" title="Ele pisca!">
+		<iframe data-src="homer.html"></iframe>
 	</section>
 	
+	<section class="slide" title="O futuro chegou">
+		<h2>O futuro já chegou</h2>
+	</section>
+	
+	<section class="image slide" style="background-image:url(img/devices_people.jpg)" data-source="Foto: http://www.flickr.com/photos/lyza/">
+		<div></div>
+	</section>
+
 	<section class="slide">
 		<h2>History</h2>
 		<ul>
