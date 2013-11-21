@@ -45,7 +45,7 @@ var self = window.SlideShow = function(slide) {
 
 		timer.id = 'timer';
 		timer.setAttribute('style', PrefixFree.prefixCSS('transition-duration: ' + this.duration * 60 + 's;'));
-		body.appendChild(timer);
+		document.getElementById('timeholder').appendChild(timer);
 
 		addEventListener('load', function() {
 			timer.className = 'end';
