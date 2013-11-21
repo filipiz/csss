@@ -11,7 +11,7 @@
 	<link href="reusable.css" rel="stylesheet" />
 	<script src="prefixfree.min.js"></script>
 </head>
-<body data-duration="10">
+<body data-duration="40">
 <div id="topbar"></div>
 <div id="nextt"></div>
 <div id="div"></div>
@@ -41,12 +41,17 @@ A forma como as pessoas usam a web está mudando
 * Amontoado de devices
 O futuro já chegou.
 
-http://futurefriend.ly/
 
 * Gráfico de uso da web via mobile
+http://saladeimprensa.ibge.gov.br/noticias?view=noticia&id=1&busca=1&idnoticia=2382
+
 Asia e Africa já possuem mais de 50% via mobile
 Isso traz muitos desafios
 * HTC
+
+http://opensignal.com/reports/fragmentation.php
+
+
 A forma velha de projetar para a web não funciona
 * Photoshop 
 
@@ -114,10 +119,32 @@ O que vale no final é o software/site construído... o psd vai ser descartado..
 Não se apegue no volátil...
 
 Algumas coisas que você precisa enfiar na caixola para não ficar preso no passado enquanto estiver criando seu protótipo...
+
+http://futurefriend.ly/
+
+
 Mobile first...
 Conteúdo primeiro, navegação depois. (sem CSS uma página bem estrutura fica incrivelmente linda de se let )
 Se liga na diferença de interação touch x ponteiro..
 Se liga em coisas como like buttons
+
+"Losing 80% of your screen space forces you to focus. "
+Luke Wroblewski .. @lukew .. http://www.lukew.com/
+
+1 mobile is exploding, 2. mobile forces you to focus, 3. mobile extends you capabilities
+http://www.lukew.com/ff/entry.asp?933
+
+Conditional lazy loading
+http://adactio.com/journal/4497/
+
+Multiscreen patterns
+Coherence
+Synchronization
+Screen sharing
+Device Shifting
+Complementary
+Simultaneity
+http://previous.precious-forever.com/2011/05/26/patterns-for-multiscreen-strategies/
 
 Outras coisas interessantes que o Foundation tem
 - componentes javascript
@@ -150,6 +177,10 @@ Construído em cima do SASS
 	</section>
 	</div>
 	
+	<section class="partial image slide" style="background-image:url(img/trollplore.jpg)">
+		
+	</section>
+
 	<section class="slide">
 		<div class="holder">
 		<h2>O futuro já chegou</h2>
@@ -165,6 +196,141 @@ Construído em cima do SASS
 
 	<section class="slide">
 		<div class="holder">
+		<h2>O futuro já está aqui...</h2>
+		</div>
+	</section>
+
+	<section class="partial image slide" style="background-image:url(img/mobile_desktop.png)">
+		
+	</section>
+
+	<section class="partial image slide" style="background-image:url(img/mobile_web_usage.jpg)">
+		
+	</section>
+
+	<section class="partial image slide" style="background-image:url(img/mobile_web_usage_brasil.gif)">
+		
+	</section>
+
+	<section class="slide">
+		<h2>Agora os desafios são outros.</h2>
+	</section>
+
+	<section class="partial image slide" style="background-image:url(img/android_screensize.png)" data-source="opensignal.com">
+		
+	</section>
+
+	<section class="slide">
+		<h2>Projetar para todos os dispositivos é impraticável...</h2>
+	</section>
+
+	<section class="slide">
+		<h2>A forma antiga de projetar interfaces não funciona mais</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Oi, eu sou Filipi, da Nextt</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Vale, Phillips, Verint, IASD, Softplan, Agriness, RD</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Vim aqui para dizer</h2>
+		<ul>
+			<li>960 morreu</li>
+			<li>um protótipo é outra coisa</li>
+			<li>não façam "telas"</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>4 anos de next + Lean UX + Agile</h2>
+	</section>
+
+
+	<section class="slide">
+		<h2>960 morreu</h2>
+		<!-- foi legal... mas não serve mais... funciona bem no desktop, até aguenta no tablet, não funciona em celular -->
+	</section>
+
+	<section class="slide">
+		<h2>960 = alucionação coletiva</h2>
+		<!-- é assim que se faz... vamos fazer assim depois a gente trata as excessões -->
+		<ul>
+			<li>Vamos fazer um aplicativo nativo?</li>
+			<!-- dificil de fazer, não funcionam cross devices, precisam ser aprovados -->
+			<li>Que tal site específicos para alguns dispositivos?</li>
+			<!-- demora demais, conteúdo duplicado... ofende usuários de dispositivos não suportados -->
+			<li></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Prototipação reponsabiva é abrir mão do controle.</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Este é o seu conteúdo. Ele vai ser distribuído em diversos dispositivos.</h2>
+		<p>Regra #1 - comece pelo que é importante... o conteúdo.</p>
+		<p>Regra #2 - progressive enhancement.</p>
+		<!-- começa e testa rápido em tudo! -->
+	</section>
+
+	<section class="slide">
+		<h2>Print screen do new do photoshop</h2>
+		<!-- esta é a forma velha de se prototipar.. vc abre o photoshop e começa a evoluir suas idéias...
+		Mas o photoshop não é responsivo.. e você vai longe demais sem visualizar como as coisas vão ser
+		em outros dispositivo. Você vai se ferrar.. eu já me ferrei.. vai ter de fazer tudo denovo... 
+		Por isso eu proponho comecem pelo código, visualiza antes.. vai mudar -->
+	</section>
+
+	<section class="slide">
+		<h2>Refoço</h2>
+		<ul>
+			<li>Codifica logo</li>
+			<li>Testa muito!</li>
+			<!-- olhem só... sem vocês perceberem eu comecei a falar de agile..
+			este é um principio básico do lean / ágil .. faz um mvp, testa, melhora 
+			isto abre uma brecha pra eu entrar no segundo ponto que eu quero falar 
+			depois eu voltarei deste ponto para falar mais algumas coisas importantes-->
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>um protótipo é outra coisa</h2>
+			<!-- parem de pensar em um protótipo como uma documentação -->
+	</section>
+
+
+	<section class="slide">
+		<h2>a moda antiga..</h2>
+		<p>wireframe, photoshop, código</p>
+		<!--  -->
+	</section>
+
+	<section class="slide">
+		<h2>joga fora os protótipos...</h2>
+		<p>você vai virar refém</p>
+		<!--  protótipo deve ser encarado apenas como um acúmolo de conhecimento. -->
+		<!-- se você guardar ele vai virar um documento e ele vai ficar desatualizado,
+		no código você vai resolver pequenas coisas para fazer funcionar em todos os browsers
+		em todos os dispositivos... 
+		o seu cliente em algum momento vai abrir o photoshop, vai ver que está diferente
+		e vai pedir para você refazer... e você não vai lembrar dos detalhes do porque você tomou aquela decisão
+		e você vai entrar num buraco sem fundo... -->
+
+	</section>
+
+	<section class="slide" title="O futuro chegou">
+		<img src="img/homer_ios.png" />
+		<img src="img/homer_android.png" />
+	</section>
+	
+
+
+	<section class="slide">
 		<h2>History</h2>
 		<ul>
 			<li class="delayed">I had to create a presentation for my talk at <a href="http://front-trends.com">Front Trends 2010</a></li>
