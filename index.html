@@ -6,18 +6,15 @@
 	<title>Como prototipar e desenvolver para múltiplos dispositivos</title>
 	
 	<link href="slideshow.css" rel="stylesheet" />
+	<link href="reusable.css" rel="stylesheet" />
 	<link href="theme.css" rel="stylesheet" />
 	<link href="talk.css" rel="stylesheet" />
-	<link href="reusable.css" rel="stylesheet" />
 	<script src="prefixfree.min.js"></script>
 </head>
-<body data-duration="40">
+<body>
 <div id="topbar"></div>
 <div id="nextt"></div>
 <div id="div"></div>
-<div id="timeholder">
-	<div id="bullets"></div>
-</div>
 <div id="botbar"></div>
 <!--
 
@@ -123,6 +120,8 @@ Algumas coisas que você precisa enfiar na caixola para não ficar preso no pass
 http://futurefriend.ly/
 
 
+http://abetteruserexperience.com/2013/08/twitter-bootstrap-3-vs-foundation-4-which-one-should-you-use/
+
 Mobile first...
 Conteúdo primeiro, navegação depois. (sem CSS uma página bem estrutura fica incrivelmente linda de se let )
 Se liga na diferença de interação touch x ponteiro..
@@ -168,6 +167,8 @@ Construído em cima do SASS
 	<div class="holder">
 	<section class="partial image slide" title="Aurélio, o cara" style="background-image:url(img/aurelio.jpg)">
 		<!-- TODO colocar twitter aurélio? -->
+		<div></div>
+		<div class="imgmask"></div>
 	</section>
 	</div>
 
@@ -177,27 +178,25 @@ Construído em cima do SASS
 	</section>
 	</div>
 	
-	<section class="partial image slide" style="background-image:url(img/trollplore.jpg)">
-		
-	</section>
-
-	<section class="slide">
-		<div class="holder">
-		<h2>O futuro já chegou</h2>
-		</div>
-	</section>
-	
 	<div class="holder">
-	<section class="image slide" style="background-image:url(img/devices_people.jpg)" data-source="flickr.com/photos/lyza/">
+	<section class="partial image slide" style="background-image:url(img/trollplore.jpg)">
 		<div></div>
 		<div class="imgmask"></div>
 	</section>
 	</div>
+</section>
 
-	<section class="slide">
+<section>
+
+	<header class="slide">
+		<textarea class="snippet" data-subject="#nextt">z-index: 10; background: url(img/nextt_invertido.png);background-size: cover;</textarea>
+		<textarea class="snippet">color:#FFF;</textarea>
 		<div class="holder">
-		<h2>O futuro já está aqui...</h2>
+		<h1>O futuro já chegou</h1>
 		</div>
+	</header>
+
+	<section class="image slide" style="background-image:url(img/devices_people.jpg)" data-source="flickr.com/photos/lyza/">
 	</section>
 
 	<section class="partial image slide" style="background-image:url(img/mobile_desktop.png)">
@@ -212,82 +211,198 @@ Construído em cima do SASS
 		
 	</section>
 
-	<section class="slide">
-		<h2>Agora os desafios são outros.</h2>
-	</section>
+</section>
+<section>
+	<header class="slide">
+		<textarea class="snippet" data-subject="#nextt">z-index: 10; background: url(img/nextt_invertido.png);background-size: cover;</textarea>
+		<textarea class="snippet">color:#FFF;</textarea>
+		<div class="holder">
+		<h1>Agora os desafios são outros.</h1>
+		</div>
+	</header>
 
 	<section class="partial image slide" style="background-image:url(img/android_screensize.png)" data-source="opensignal.com">
 		
 	</section>
 
-	<section class="slide">
-		<h2>Projetar para todos os dispositivos é impraticável...</h2>
+	<section class="partial image slide" style="background-image:url(img/homer_mobile.png)">
 	</section>
 
+
+	<div class="holder">
 	<section class="slide">
-		<h2>A forma antiga de projetar interfaces não funciona mais</h2>
+		<h1>Projetar para todos os dispositivos é impraticável...</h1>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h1>A forma antiga de projetar interfaces não funciona mais</h1>
+	</section>
+	</div>
+</section>
+<section>
+	<header class="slide">
+		<textarea class="snippet" data-subject="#nextt">z-index: 10; background: url(img/nextt_invertido.png);background-size: cover;</textarea>
+		<textarea class="snippet">color:#FFF;</textarea>
+		<div class="holder">
+		<h1>Oi, eu sou Filipi, da Nextt</h1>
+		</div>
+	</header>
+
+	<section class="image slide" style="background-image:url(img/clientes.png)">
+		
 	</section>
 
+	<div class="holder">
 	<section class="slide">
-		<h2>Oi, eu sou Filipi, da Nextt</h2>
-	</section>
-
-	<section class="slide">
-		<h2>Vale, Phillips, Verint, IASD, Softplan, Agriness, RD</h2>
-	</section>
-
-	<section class="slide">
+		<!-- no alto dos meus 12 anos de TI, 4 anos de Nextt, -->
 		<h2>Vim aqui para dizer</h2>
 		<ul>
-			<li>960 morreu</li>
-			<li>um protótipo é outra coisa</li>
-			<li>não façam "telas"</li>
+			<li class="delayed">960 morreu</li>
+			<li class="delayed">o que é prototipagem responsiva</li>
+			<li class="delayed">protótipo não é o que você (ou seu cliente) acha que é</li>
+			<li class="delayed">por favor, não façam "telas"</li>
 		</ul>
 	</section>
+	</div>
 	
-	<section class="slide">
-		<h2>4 anos de next + Lean UX + Agile</h2>
-	</section>
 
-
+	<div class="holder">
 	<section class="slide">
+		<h3>Tópico #1</h3>
+		<p>&nbsp;</p>
 		<h2>960 morreu</h2>
 		<!-- foi legal... mas não serve mais... funciona bem no desktop, até aguenta no tablet, não funciona em celular -->
 	</section>
+	</div>
 
+	<div class="holder">
 	<section class="slide">
-		<h2>960 = alucionação coletiva</h2>
+		<h2>960 = alucinação coletiva</h2>
 		<!-- é assim que se faz... vamos fazer assim depois a gente trata as excessões -->
+		<p>"Vamos fazer assim... depois a gente trata as variações."</p>
 		<ul>
-			<li>Vamos fazer um aplicativo nativo?</li>
+			<li class="delayed">Vamos fazer um aplicativo nativo?</li>
 			<!-- dificil de fazer, não funcionam cross devices, precisam ser aprovados -->
-			<li>Que tal site específicos para alguns dispositivos?</li>
+			<li class="delayed">Que tal site específicos para alguns dispositivos?</li>
 			<!-- demora demais, conteúdo duplicado... ofende usuários de dispositivos não suportados -->
-			<li></li>
 		</ul>
 	</section>
-
-	<section class="slide">
-		<h2>Prototipação reponsabiva é abrir mão do controle.</h2>
+	</div>
+	
+	<div class="holder">
+	<section class="partial image slide" style="background-image:url(img/rip.jpg)">
+		<!-- TODO colocar twitter aurélio? -->
+		<div></div>
+		<div class="imgmask"></div>
 	</section>
+	</div>
 
+	<div class="holder">
 	<section class="slide">
-		<h2>Este é o seu conteúdo. Ele vai ser distribuído em diversos dispositivos.</h2>
-		<p>Regra #1 - comece pelo que é importante... o conteúdo.</p>
-		<p>Regra #2 - progressive enhancement.</p>
-		<!-- começa e testa rápido em tudo! -->
+		<h3>Tópico #2</h3>
+		<p>&nbsp;</p>
+		<h2>Prototipação responsiva</h2>
 	</section>
+	</div>
 
-	<section class="slide">
-		<h2>Print screen do new do photoshop</h2>
+</section>
+<section>
+	<header class="slide">
+		<textarea class="snippet" data-subject="#nextt">z-index: 10; background: url(img/nextt_invertido.png);background-size: cover;</textarea>
+		<textarea class="snippet">color:#FFF;</textarea>
+		<div class="holder">
+		<h1>Prototipação reponsiva é abrir mão do controle.</h1>
+		</div>
+	</header>
+
+	<section class="partial image slide" style="background-image:url(img/newpsd.png)">
 		<!-- esta é a forma velha de se prototipar.. vc abre o photoshop e começa a evoluir suas idéias...
 		Mas o photoshop não é responsivo.. e você vai longe demais sem visualizar como as coisas vão ser
 		em outros dispositivo. Você vai se ferrar.. eu já me ferrei.. vai ter de fazer tudo denovo... 
 		Por isso eu proponho comecem pelo código, visualiza antes.. vai mudar -->
 	</section>
 
+
+	<div class="holder">
 	<section class="slide">
-		<h2>Refoço</h2>
+		<h3>Tópico #3</h3>
+		<p>&nbsp;</p>
+		<h2>Protótipo não é o que você (ou seu cliente) acha que é</h2>
+		<!-- parem de pensar em um protótipo como uma documentação -->
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="image slide" style="background-image:url(img/imagem_passos.png)">
+		<h3 style="margin-top: -40px;">A moda antiga..</h3>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h1>jogue fora</h1>
+		<!--  protótipo deve ser encarado apenas como um acúmolo de conhecimento. -->
+		<!-- se você guardar ele vai virar um documento e ele vai ficar desatualizado,
+		no código você vai resolver pequenas coisas para fazer funcionar em todos os browsers
+		em todos os dispositivos... 
+		o seu cliente em algum momento vai abrir o photoshop, vai ver que está diferente
+		e vai pedir para você refazer... e você não vai lembrar dos detalhes do porque você tomou aquela decisão
+		e você vai entrar num buraco sem fundo... -->
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h3>Tópico #2 - novamente</h3>
+		<p>&nbsp;</p>
+		<h2>Prototipação responsiva</h2>
+		<p>#comofaz?</p>
+	</section>
+	</div>
+
+
+
+	<div class="holder">
+	<section class="slide">
+		<h1>Passo #1 - comece pelo que é importante... o conteúdo.</h1>
+		<!-- começa e testa rápido em tudo! -->
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="partial image slide" style="background-image:url(img/fflogo.jpg)">
+		<div></div>
+		<div class="imgmask"></div>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Além da ferramenta, você precisa de processo...</h2>
+		<ul>
+			<li>Content First</li>
+			<li>Mobile First</li>
+			<li>...</li>
+			<li>FutureFriend.ly</li>
+		</ul>
+	</section>
+	</div>
+
+
+	<div class="holder">
+	<section class="slide">
+		<h1> #1 - comece pelo que é importante... o conteúdo.</h1>
+		<!-- começa e testa rápido em tudo! -->
+	</section>
+	</div>
+
+		<p>Regra #2 - progressive enhancement.</p>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Só pra lembrar</h2>
 		<ul>
 			<li>Codifica logo</li>
 			<li>Testa muito!</li>
@@ -297,66 +412,189 @@ Construído em cima do SASS
 			depois eu voltarei deste ponto para falar mais algumas coisas importantes-->
 		</ul>
 	</section>
+	</div>
 
+
+	<div class="holder">
 	<section class="slide">
-		<h2>um protótipo é outra coisa</h2>
-			<!-- parem de pensar em um protótipo como uma documentação -->
+		<h2>Você precisa de uma ferramenta que</h2>
+		<ol>
+			<li>Tenha um bom grid flúido</li>
+			<li>Trate imagens (e vídeos) de forma que você não se preocupe com larguras</li>
+			<li>Componentes básicos que funcionam (tipografia, formulários, botões)</li>
+		</ol>
 	</section>
+	</div>
 
-
-	<section class="slide">
-		<h2>a moda antiga..</h2>
-		<p>wireframe, photoshop, código</p>
-		<!--  -->
-	</section>
-
-	<section class="slide">
-		<h2>joga fora os protótipos...</h2>
-		<p>você vai virar refém</p>
-		<!--  protótipo deve ser encarado apenas como um acúmolo de conhecimento. -->
-		<!-- se você guardar ele vai virar um documento e ele vai ficar desatualizado,
-		no código você vai resolver pequenas coisas para fazer funcionar em todos os browsers
-		em todos os dispositivos... 
-		o seu cliente em algum momento vai abrir o photoshop, vai ver que está diferente
-		e vai pedir para você refazer... e você não vai lembrar dos detalhes do porque você tomou aquela decisão
-		e você vai entrar num buraco sem fundo... -->
-
-	</section>
-
-	<section class="slide" title="O futuro chegou">
-		<img src="img/homer_ios.png" />
-		<img src="img/homer_android.png" />
-	</section>
-	
-
-
-	<section class="slide">
-		<h2>History</h2>
-		<ul>
-			<li class="delayed">I had to create a presentation for my talk at <a href="http://front-trends.com">Front Trends 2010</a></li>
-			<li class="delayed">The only web-based presentation systems I knew of didn't fit my needs</li>
-			<li class="delayed">&hellip;so I rolled up my own</li>
-			<li class="delayed">FT2010 attendees asked me to release it</li>
-			<li class="delayed">and here it is! ;-)</li>
-		</ul>
+	<section class="image slide" style="background-image:url(img/grid.png)" data-source="dev.opera.com">
+	<div class="holder">
+		<h2 style="color:#005578">O que é o Grid?</h2>
+		<!-- linhas imaginarias que dao suporte aos elementos na tela 
+		guias para diagramar os objetos .. referência
+		dificulta ordenação, hierarquia, consistencia, inventar padrões o tempo todo
+		
+		desenvolvedores sem noção vao criar telas... se você der uma ferramenta
+		as coisas virão padronizadas... vai parecer menos bagunçado... ;)
+		-->
 		</div>
 	</section>
 	
-	<section class="slide" id="navigation">
+	<section class="iframe slide">
+		<iframe src="http://g1.globo.com/sc/"></iframe>
+	</section>	
+
 	<div class="holder">
-		<h2>Navigation</h2>
-		<p>Only through keyboard for now :(</p>
-		<ul>
-			<li>→ or ↓ to advance to the next slide or incrementally displayed item</li>
-			<li>← or ↑ to go to the previous slide or incrementally displayed item</li>
-			<li>Ctrl* + → or Ctrl* + ↓ to jump to the next slide</li>
-			<li>Ctrl* + ← or Ctrl* + ↑ to jump to the previous slide</li>
-			<li>Home to go to the first slide, End to go to the last</li>
-			<li>Ctrl* + G to jump to an arbitrary slide (by slide number or identifier)</li>
-		</ul>
-		<p>* Ctrl or Shift actually. Only Shift works in Opera.</p>
-	</div>
+	<section class="partial image slide" style="background-image:url(img/foundation.png)">
+		<div></div>
+		<div class="imgmask"></div>
 	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Foundation 5 está no ar</h2>
+		<p>Mais rápido!</p>
+		<ul>
+			<li>Interchange</li>
+			<li>Animações otimizadas</li>
+			<li>Off Canvas Menu</li>
+			<li>Medium Grid</li>
+			<li>Documentação bem melhorada</li>
+			<li>CLI Tools</li>
+			<li>Libsassy</li>
+		</ul>
+	</section>
+	</div>
+
+
+	<div class="holder">
+	<section class="partial image slide" style="background-image:url(img/twitter-bootstrap.jpg)">
+		<div></div>
+		<div class="imgmask"></div>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="iframe slide">
+		<h2>Componentes básicos que funcionam</h2>
+		<div><a href="http://foundation.zurb.com/docs/v/4.3.2/components/kitchen-sink.html">Foundation</a> | <a href="http://getbootstrap.com/examples/theme/">Bootstrap</a></div>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="iframe slide">
+		<h2>Diferenças</h2>
+		<div>
+			<h3>Foundation</h3>
+			<ul>
+				<li>SASS</li>
+				<li>CLI tools</li>
+				<li>IE9+ (IE8 com extensions)</li>
+				<li>Doc ligeiramente melhor</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Bootstrap</h3>
+			<ul>
+				<li>LESS</li>
+				<li>-</li>
+				<li>IE8+</li>
+				<li>Comunidade grande / Stackoverflow</li>
+			</ul>
+		</div>
+	</section>
+	</div>
+
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Além da ferramenta, você precisa de processo...</h2>
+		<ul>
+			<li>Começa com sketches</li>
+			<li>Depois joga no HTML</li>
+		</ul>
+	</section>
+	</div>
+
+	<section class="image slide" style="background-image:url(img/responsive-design-testing.jpg)" data-source="ami.responsivedesign.is">
+	</section>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Além da ferramenta, você precisa de processo...</h2>
+		<ul>
+			<li class="delayed">Envolva todo mundo - colete feedbacks</li>
+			<li class="delayed">Agora sim... vai pro Photoshop</li>
+			<li class="delayed">Bota no código</li>
+			<li class="delayed">Monta um styleguide</li>
+		</ul>
+	</section>
+	</div>
+
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Tópico #4</h2>
+		<p>&nbsp;</p>
+		<h2>Não façam mais telas</h2>
+	</section>
+	</div>
+
+
+	<section class="image slide" style="background-image:url(img/cart_before_the_horse.jpg)" data-source="blog.bhhsneproperties.com">
+	</section>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Gaste seu fosfato na função, não no contexto</h2>
+		<ul>
+			<li class="delayed">Trabalhe os componentes, não as telas</li>
+			<li class="delayed">Classifica, agrupa, reusa</li>
+			<li class="delayed">Laser Focus (isola, testa, varia)</li>
+			<li class="delayed">Monte um "Kitchen Sink"</li>
+		</ul>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Gaste seu fosfato na função, não no contexto</h2>
+		<ul>
+			<li class="delayed">Vai virar um framework de componentes... o styleguide</li>
+			<li class="delayed">Compartilhe a responsabilidade</li>
+			<li class="delayed">Após o styleguide, criar uma tela é apenas combinar componentes</li>
+		</ul>
+	</section>
+	</div>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Pra finalizar...</h2>
+		<ul>
+			<li class="delayed">O futuro já chegou... </li> 
+			<!-- você não tem mais controle.... projete para funcionar em qqer coisa com quatro cantos, independente da largura !-->
+			<li class="delayed">Esqueça Balsamiq, Axure... prototipe no HTML</li>
+			<!-- porque assim você pode visualizar os problemas e tomar uma ação logo -->
+			<li class="delayed">Pense ágil, seja ágil</li>
+			<!-- interaja com os stakeholders, teste o tempo todo, em todo lugar -->
+			<li class="delayed">Comece pelo conteúdo</li>
+			<!-- -->
+			<li class="delayed">Organiza tudo num styleguide</li>
+
+			<!-- Foi isso que a gente aprendeu nos últimos 4 anos -->			
+		</ul>
+	</section>
+
+	<div class="holder">
+	<section class="slide">
+		<h2>Obrigado</h2>
+		<ul>
+			<li class="delayed">@filipiz / @nexttbr</li> 
+			<li class="delayed">filipi@nextt.com.br</li>
+			<li class="delayed">http://www.nextt.com.br/</li>
+		</ul>
+	</section>	
+	</div>
 </section>
 
 <section>
@@ -365,77 +603,7 @@ Construído em cima do SASS
 		<h1>Features</h1>
 	</header>
 	</div>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Thumbnail view</h2>
-		<p>Press Ctrl+H (or Shift+H if you're in Opera) now.</p>
-		<p class="delayed">Cool, huh? You can press Ctrl+Shift+H to see all slides (warning: can be slow!)</p>
-	</div>
-	</section>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Timer</h2>
-		<ul>
-			<li>Timer in the form of a progress bar on the top</li>
-			<li>Define the talk duration with the attribute <code>data-duration</code> on the <code>body</code></li>
-			<li>Style the timer and the end state with the selectors <code>#timer</code> and <code>#timer.end</code> respectively.</li>
-		</ul>
-	</div>
-	</section>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Presenter view</h2>
-		<p>This slide has presenter notes. They are only visible in presenter view (Ctrl+P or Shift+P).</p>
-		<p class="presenter-notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
-	</section>
-	
-	<section class="slide">
-	<div class="holder">
-		<style scoped>
-			h2 {
-				font-size: 200%;
-				font-weight: bold;
-			}
-		</style>
-		<h2><code>&lt;style scoped /&gt;</code></h2>
-		<p>You can use the HTML5 <code>scoped</code> attribute on style elements in slides, to only style the current slide or inside sections that include multiple slides to style all of them and nothing else.</p>
-		<p>For example, inspect this slide and then run <code>$$('style[scoped]')[0].sheet.cssRules[0].selectorText</code> in the console to see how the original selector gets changed.</p>
-	</div>
-	</section>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>More features</h2>
-		<ul>
-			<li class="delayed">IDs are dynamically assigned by JavaScript&hellip;</li>
-			<li class="delayed">&hellip;but you can also assign your own, bringing the best of both worlds</li>
-			<li class="delayed">Incremental display of slide contents (just add <code>class="delayed"</code>)</li>
-			<li class="delayed">Slide scaling based on window size (size everything you want to be scalable in ems)</li>
-			<li class="delayed">Document.title changing according to slide title (fetched either from the <code>title</code> attribute or the slide's heading)</li>
-		</ul>
-	</div>
-	</section>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Drawbacks</h2>
-		<ul>
-			<li>Only supports modern browsers. Why?
-				<ul>
-					<li>More lightweight</li>
-					<li>Easier to understand code</li>	
-					<li>It's a presentation, so the environment is controlled anyway</li>
-				</ul>
-			</li>
-			<li>No mouse click to advance to the next slide. I consider it annoying.</li>
-			<li>Doesn't work in mobile :(</li>
-		</ul>
-	</div>
-	</section>
+
 </section>
 
 <section>
@@ -444,114 +612,8 @@ Construído em cima do SASS
 		<h1>Plugins</h1>
 	</header>
 	</div>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Plugin: CSS Snippets</h2>
-		<pre>new CSSSnippet(document.getElementById('snippet'));</pre>
-		<ul>
-			<li>Dynamically edit CSS and reflect the results in any element's style
-				<ul>
-					<li>Which one? Specify a selector with the <code>data-subject</code> attribute or leave blank for the slide to be the subject</li>
-				</ul>
-			<li>Automatically prefixes CSS3 properties/values, when needed
-				<ul>
-					<li>Also does it with the style attribute (statically) if the element is not a text field (doesn't work in IE and Firefox 3.6)</li>
-				</ul>
-			</li>
-			<li>Textarea automatically adjusts rows/font-size on line break (use class <code>dont-adjust</code> to turn off)</li>
-		</ul>
-	</li>
-	</section>
-	
-	<div class="holder">
-	<section class="slide">
-		<h2>CSS Snippets demo</h2>
-		<p>Edit the following CSS code:</p>
-		<textarea class="snippet">background-color:red;
-background-image: linear-gradient(red, #600)</textarea>
-	</section>
-	</div>
-	
-	<div class="holder">
-	<section class="slide" id="animation-demo">
-		<h2>CSS Snippets: raw CSS</h2>
-		<textarea class="snippet" data-raw>@keyframes rainbow {
-	from, to { background: red }
-	16% { background: yellow }
-	33% { background: green }
-	50% { background: aqua }
-	66% { background: blue }
-	83% { background: fuchsia }
-}
-
-#animation-demo { animation: 30s rainbow infinite; }</textarea>
-	</section>
-	</div>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Plugin: CSS Controls</h2>
-		<ul>
-			<li>Use sliders and other controls to adjust CSS values
-				<ul>
-					<li>Which one? Specify a selector with the <code>data-subject</code> attribute or leave blank for the slide to be the subject</li>
-					<li>Specify style with <code>data-style</code> (use <code>{value}</code> where the result will be)</li>
-				</ul>
-			</li>
-			<li>Automatically prefixes CSS3 properties/values, when needed</li>
-		</ul>
-	</div>
-	</section>
-	
-	<div class="holder">
-	<section class="slide" id="css-controls-demo">
-		<h2>CSS Controls demo</h2>
-		<label>Slide lightness: 
-			<input type="range" min="0" max="255" value="128" data-style="background-color:rgb({value}, {value}, {value});" class="css-control" />
-		</label>
-		<label>
-			border-width:
-			<input type="number" min="0" max="60" value="30" data-style="border-width: {value}px;" class="css-control" size="5" />
-		</label>
-		<label>
-			font-family:
-			<select data-style="font-family: {value};" class="css-control">
-				<option selected>sans-serif</option>
-				<option>Georgia, serif</option>
-				<option>Consolas, monospace</option>
-				<option>'Trebuchet MS', sans-serif</option>
-			</select>
-		</label>
-	</section>
-	</div>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Plugin: Code highlight</h2>
-		<ul>
-			<li>Syntax highlighting for every <code>&lt;code&gt;</code> element with a <code>lang</code> attribute.</li>
-			<li>Only highlights when the slide becomes active, for performance</li>
-			<li>Currently only supports JavaScript, but it's easy to add any language</li>
-			<li>Styling done through easy to understand classes like <code>.string</code> or <code>.comment</code></li>
-		</ul>
-	</div>
-	</section>
-	
-	<section class="slide">
-	<div class="holder">
-		<h2>Code highlight example</h2>
-		<pre><code lang="javascript">// Comment
-document.addEventListener('DOMAttrModified',function(e) {
-  var node = e.target, attr = e.attrName;
-  if(/^input$/i.test(node.nodeName) 
-    &amp;&amp; (attr === 'placeholder' || attr === 'value')
-    || foo > 5)
-      Placeholder.update(node);
-}, false);</code></pre>
-	</div>
-	</section>
 </section>
+
 <footer class="slide" title="The End">
 	<div class="holder">
 	<h2>Thank you!</h2>
